@@ -48,3 +48,30 @@ Student-ETL-project/
 - Store data in a database.
 - Add logging and reporting.
 
+## Sample Output
+
+The ETL script processes student marks and saves valid records to `output/results.csv`.
+
+| Name | Marks | Result |
+|---|---:|---|
+| Aisha | 85 | Pass |
+| Rahul | 40 | Pass |
+| Zoya | 0 | Fail |
+| Aman | 30 | Fail |
+| Priya | 76 | Pass |
+| Arjun | 85 | Pass |
+| Neha | 28 | Fail |
+| Rohan | 67 | Pass |
+| Sara | 95 | Pass |
+| Vikram | 35 | Pass |
+| Ananya | 81 | Pass |
+| Kabir | 45 | Pass |
+| Meera | 19 | Fail |
+| Aditya | 72 | Pass |
+| Isha | 88 | Pass |
+
+### Data Validation Examples
+- Missing marks are skipped.
+- Non-numeric marks such as `abc` are rejected.
+- Marks outside the 0–100 range are rejected.
+- Marks of 35 or above result in Pass; marks below 35 result in Fail.
