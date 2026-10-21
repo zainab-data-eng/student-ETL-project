@@ -75,3 +75,20 @@ The ETL script processes student marks and saves valid records to `output/result
 - Non-numeric marks such as `abc` are rejected.
 - Marks outside the 0–100 range are rejected.
 - Marks of 35 or above result in Pass; marks below 35 result in Fail.
+
+## Testing
+
+Automated tests are written using Python's built-in `unittest` framework.
+
+To run the tests, execute:
+
+```bash
+python -m unittest test_etl.py
+```
+
+The tests check:
+- Pass result for marks above 35
+- Fail result for marks below 35
+- Pass result for marks exactly equal to 35
+
+All 3 tests passed successfully.
